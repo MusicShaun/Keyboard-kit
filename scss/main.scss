@@ -1,0 +1,73 @@
+@import './config';
+
+* {
+  font-family: 'roboto';
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.backgrounder {
+  background-image: url('/pexels-hồ-thành-11018964.jpg');
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.keys {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  @include transformer(-50%, -50%);
+
+    & .key {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-shrink: 2;
+      text-align: center;
+      margin: 1rem;
+      width: 90px;
+      height: 90px;
+      @include borderer;
+      color: white;
+      background-color: rgba(55, 5, 16, 0.504);
+      @include transitioner(0.07s);
+
+      & kbd {
+        font-size: 3.2rem;
+        font-weight: 500;
+      }
+      & span {
+        font-size: 1.2rem;
+        color: rgb(221, 255, 0);
+      }
+    }
+}
+
+
+.playing {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  border-color: white !important;
+  box-shadow: 0 0 100px #ffc600;
+
+}

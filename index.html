@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&family=Nunito&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <script src="main.js" defer></script>
+  <script src="floaters.js" defer></script>
+  <title>Drum Kit</title>
+</head>
+<body>
+
+
+  <div class="keys">
+    <div data-key='65' class="key">
+      <kbd>A</kbd>
+      <span class="sound">kick</span>
+    </div>
+    <div data-key='83' class="key">
+      <kbd>S</kbd>
+      <span class="sound">snare</span>
+    </div>
+    <div data-key='68' class="key">
+      <kbd>D</kbd>
+      <span class="sound">clap</span>
+    </div>
+    <div data-key='70' class="key">
+      <kbd>F</kbd>
+      <span class="sound">boom</span>
+    </div>
+    <div data-key='71' class="key">
+      <kbd>G</kbd>
+      <span class="sound">tom</span>
+    </div>
+    <div data-key='72' class="key">
+      <kbd>H</kbd>
+      <span class="sound">hihat</span>
+    </div>
+    <div data-key='74' class="key">
+      <kbd>J</kbd>
+      <span class="sound">openhat</span>
+    </div>
+    <div data-key='75' class="key">
+      <kbd>K</kbd>
+      <span class="sound">ride</span>
+    </div>
+
+
+  </div>
+
+  <audio  data-key="65" src="sounds/kick.wav"></audio>
+  <audio  data-key="83" src="sounds/snare.wav"></audio>
+  <audio  data-key="68" src="sounds/clap.wav"></audio>
+  <audio  data-key="75" src="sounds/ride.wav"></audio>
+  <audio  data-key="74" src="sounds/openhat.wav"></audio>
+  <audio  data-key="70" src="sounds/boom.wav"></audio>
+  <audio  data-key="72" src="sounds/hihat.wav"></audio>
+  <audio  data-key="71" src="sounds/tom.wav"></audio>
+
+
+
+
+  <div class="backgrounder"></div>
+
+</body>
+</html>
